@@ -1,0 +1,40 @@
+strlen	mayank	6
+strcpy	ab	abc	abc
+strncpy	ab	abc	1	a
+strlcpy	ab	abc	2	2
+stpcpy	ab	abc	abc
+strcat	abc	ab	abcab
+strncat	abc	ab	2	abcab
+strcmp	ab	ab	0
+strncmp	ab	abc	2	0
+strstr	abcd	bc	bcd	
+strcasestr	abcd	BC	bcd
+strchr	abc	98	bc
+strrchr	abcbd	98	bd
+strspn	abcd	ac	1
+strcspn	abcd	cd	2
+strpbrk1	abhijit	ib	bhijit
+memcmp	abc	a	1	0
+memcpy	abc	ab	1	a
+memchr	abc	98	3	bc
+memmove	abcd	fgt	2	fg
+memset1	abcd	98	3	bbbd
+memmem	abcd	4	bc	2	bcd
+memccpy	qwert	abcde	100	5	abc
+memrchr1	abcbd	98	5	bd
+memfrob	abcdf	3	KHIdf
+ffs	8	4
+ffls	16	5
+fflls	32	6
+strchrnul	abcd	99	cd
+strcasecmp	ABC	abc	0
+strncasecmp	Abc	ab	2	0
+strlwr	ABC	abc
+strupr	abc	ABC
+strrev	def	fed
+strdup	efg	efg
+strndup	adfg	2	ad
+index	bcfc	99	cfc
+rindex	bcfc	99	c
+bcmp	ab	ab	2	0 
+bcopy	agh	ty	2	ag
