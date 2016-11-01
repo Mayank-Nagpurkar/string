@@ -4,7 +4,16 @@ Features
 a:Includes all the functions present in library string.h.
 b:Includes some function present in library wchar.h.
 c:Includes an input file for the user where he can test the functions written and also add functions if needed.
+d:Includes input file for string.h and wchar.h
 
-Things I plan to Implement
-a:Testing the input file for all the test cases.
-b:writing remaining functions of string.h(3 left) 
+How to use:
+For string.h : Use "make" command and ./project data1
+For wchar.h : use "make -f makefile.nix" command and ./project1 wdata
+  
+Imp points:
+To use NULL pointer in input file use "null".
+I have tried to include all test cases in the given input files.
+
+Note:
+When i tried to read differnt languages in wchar.h it started giving me seg fault, hence i have used mbstowcs function which converts a string to wide string, by doing this i was able to test by code for most of the string cases. 
+
