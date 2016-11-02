@@ -1,3 +1,5 @@
+Name: Mayank Nagpurkar
+MIS: 111503040 (S2 COMP)
 Implementation of Library function String.h
 
 Features
