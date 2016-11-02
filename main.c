@@ -7,7 +7,7 @@ void help() {
 	printf("HELP\n");
 	printf("For string.h\n");
 	printf("use make command\n");
-	printf("usage:	./project1 data1\n");
+	printf("usage:	./project data1\n");
 	printf("For wchar.h\n");
 	printf("use make command\n");
 	printf("usage:	./project2 wdata\n");
