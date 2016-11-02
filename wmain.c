@@ -12,7 +12,7 @@ void help() {
 	printf("usage:	./project2 wdata\n");
 	printf("For string.h\n");
 	printf("use make command\n");
-	printf("usage:	./project1 data1\n");
+	printf("usage:	./project data1\n");
 }
 char *readline(FILE *fp) {
 	int i = 0;
