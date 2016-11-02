@@ -13,7 +13,8 @@ For wchar.h : use "make -f makefile.nix" command and ./project1 wdata
 Imp points:
 To use NULL pointer in input file use "null".
 I have tried to include all test cases in the given input files.
+Input File format:
+function name input output
 
-Note:
-When i tried to read differnt languages in wchar.h it started giving me seg fault, hence i have used mbstowcs function which converts a string to wide string, by doing this i was able to test by code for most of the string cases. 
+
 
