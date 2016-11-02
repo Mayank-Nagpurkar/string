@@ -1,0 +1,262 @@
+strlen	mayank	5
+strlen	a	1
+strlen	ab	2
+strlen	abcdefghij	10
+strlen	 	1
+strcpy	ab	abc	abc
+strcpy	abc	ab	ab
+strcpy	abc	 	 	
+strcpy	 	abc	abc
+strcpy	a	abcdefghijk	abcdefghijk
+strncpy	ab	dbc	1	db
+strncpy	abcd	efg	2	efcd
+strncpy	abcd	efgh	10	efgh
+strncpy	 	abc	2	ab	
+strncpy	abcd	 	0	abcd
+strncpy	bc	  	10	  
+strncpy	abc	efghi	5	efghi
+strlcpy	ab	abc	2	2
+strlcpy	abc	ab	2	2
+strlcpy	 	ab	2	2
+strlcpy	abc	 	0	3
+strlcpy	efgh	a	10	1
+stpcpy	ab	abc	abc
+stpcpy	abc	ab	ab
+stpcpy	abc	 	 
+stpcpy	 	ab	ab
+strcat	abc	ab	abcab
+strcat	a	abcd	aabcd
+strcat	 	abc	 abc
+strcat	abc	 	abc 
+strcat	a	b	ab
+strncat	abc	ab	2	abcab
+strncat	ab	a	0	ab
+strncat	abc	a	5	abca
+strncat	ab	 	0	ab
+strncat	 	ab	1	 a
+strncat	a	abcd	100	aabcd
+strcmp	ab	ab	0
+strcmp	abc	abcd	-100
+strcmp	abcd	abc	100
+strcmp	ab	a	98
+strcmp	abcde	ab	99
+strcmp	abcde	efgh	-4
+strcmp	efgh	afgh	4	
+strncmp	ab	abc	2	0
+strncmp	aefgtr	abghty	1	0
+strncmp	abcd	bcdf	4	-1
+strncmp	abc	efg	10	-4
+strncmp	efg	abc	100	4
+strncmp	ab	abc	4	-99
+strncmp	abcde	abcd	7	101
+strstr	abcd	bc	bcd
+strstr	abcd	bcf	null
+strstr	abcab	ab	abcab
+strstr	ababab	a	ababab
+strstr	ab	abc	null
+strstr	afc	ab	null
+strstr	abc	 	null
+strstr	ab	abc	null
+strcasestr	abcd	BC	bcd
+strcasestr	abcd	AD	null
+strcasestr	ABcd	Bc	Bcd
+strcasestr	ABCD	cd	CD
+strcasestr	ABC	 	null
+strcasestr	AB	ABC	null
+strcasestr	A	a	A
+strcasestr	aBC	bc	BC
+strcasestr	Abc	dfe	null
+strchr	abc	b	bc
+strchr	abc	a	abc
+strchr	abca	a	abca
+strchr	bagaga	g	gaga
+strchr	abc	 	null
+strchr	abc	h	null
+strchr	bcda	a	a
+strrchr	abababa	a	a		
+strrchr	abcbd	b	bd
+strrchr	abc	 	null
+strrchr	abc	a	abc
+strrchr	abcab	a	ab
+strrchr	abc	d	null
+strrchr	abc	1	null
+strspn	abcd	ab	2
+strspn	abcd	efg	0
+strspn	abcd	bc	0
+strspn	abcd	a	1
+strspn	abc	 	0
+strspn	efgh	ejfi	2
+strspn	efgh	afgdeh	4
+strcspn	abcd	cd	2
+strcspn	abcd	efgh	4
+strcspn	abcd	 	4
+strcspn	abcd	tyuiod	3
+strcspn	abc	dc	2
+strcspn	abcd	dcba	0
+strcspn	abcd	gdhcjboa	0
+strpbrk1	abhijit	ib	bhijit
+strpbrk1	abhijit	ijt	ijit
+strpbrk1	abcd	 	null
+strpbrk1	abcd	tyuid	d
+strpbrk1	abcd	dcba	abcd
+strpbrk1	abcd	i	null
+strpbrk1	abcd	uidb	bcd
+memcmp	abc	a	1	0
+memcmp	ab	abc	2	0
+memcmp	aefgtr	abghty	1	0
+memcmp	abcd	bcdf	4	-1
+memcmp	abc	efg	10	-4
+memcmp	efg	abc	100	4
+memcmp	ab	abc	4	-99
+memcmp	abcde	abcd	7	101
+memcpy	abc	ab	1	abc
+memcpy	ab	dbc	1	db
+memcpy	abcd	efg	2	efcd
+memcpy	abcd	efgh	10	efgh
+memcpy	 	abc	2	ab	
+memcpy	abcd	 	0	abcd
+memcpy	abc	efghi	5	efghi
+memcpy	a	 	1	 
+memchr	abc	b	3	bc
+memchr	abc	b	2	bc
+memchr	abc	b	1	null
+memchr	abca	a	5	abca
+memchr	bagaga	g	4	gaga
+memchr	abc	 	3	null
+memchr	abc	z	0	null
+memchr	bcda	a	4	a
+memchr	bababa	a	1	null
+memmove	abcd	fgt	2	fgcd
+memmove	abc	ab	1	abc
+memmove	ab	dbc	1	db
+memmove	abcd	efg	2	efcd
+memmove	abcd	efgh	10	efgh
+memmove	 	abc	2	ab	
+memmove	abcd	 	0	abcd
+memmove	abc	efghi	5	efghi
+memmove	a	 	1	 
+memset1	abcd	b	3	bbbd
+memset1	abcd	b	0	abcd
+memset1	abcd	a	2	aacd
+memset1	abcd	c	1000	cccc
+memset1	 	a	1	a
+memmem	abcd	4	bc	2	bcd
+memmem	abcd	4	bcf	3	null
+memmem	abcab	5	ab	2	abcab
+memmem	ababab	6	a	1	ababab
+memmem	ab	2	abc	3	null
+memmem	afc	3	ab	2	null
+memmem	abc	3	 	1	null
+memmem	ab	2	abc	3	null
+memmem	abcd	3	cd	1	cd	
+memccpy	qwert	abcde	c	5	abcrt
+memccpy	tyui	abcd	a	5	ayui
+memccpy	qwer	abcd	b	1	null
+memccpy	qwer	abc	z	3	null
+memccpy	qwer	abcd	c	2	null
+memccpy	qwer	abcd	d	4	abcd
+memrchr1	abcbd	b	5	bd
+memrchr1	abababa	a	10	a		
+memrchr1	abcbd	b	4	bd
+memrchr1	abc	 	1	null
+memrchr1	abc	a	1	abc
+memrchr1	abcab	a	5	ab
+memrchr1	abc	d	4	null
+memrchr1	abc	1	3	null
+memrchr1	abc	b	1	null
+memrchr1	abcd	d	2	null
+memfrob	abcdf	3	KHIdf
+memfrob	abcdf	0	abcdf
+memfrob	ab	1	Kb
+memfrob	 	0	 
+ffs	8	4
+ffs	64	7
+ffs	129	1
+ffs	2128	5
+ffs	22100	3
+ffs	143200	6
+ffs	1114300	3
+ffls	16000000	11
+ffls	128500000	6
+ffls	1897000000	7
+fflls	32000000000	15
+strchrnul	abcd	c	cd
+strchrnul	abc	b	bc
+strchrnul	abc	a	abc
+strchrnul	abca	a	abca
+strchrnul	bagaga	g	gaga
+strchrnul	bcda	a	a
+strcasecmp	ABC	abc	0
+strcasecmp	ABCd	abc	100
+strcasecmp	abc	ABC	0
+strcasecmp	abc	aBc	0
+strcasecmp	abc	eFGh	-4
+strcasecmp	ABC	EBC	-4
+strcasecmp	Efg	ABC	4
+strcasecmp	abcde	AB	99
+strncasecmp	Abc	ab	2	0
+strncasecmp	ABC	abc	1	0
+strncasecmp	AB	abcdfgt	2	0
+strncasecmp	abcd	ABC	5	100
+strncasecmp	abc	e	1	-4
+strncasecmp	AbC	E	4	-4
+strncasecmp	aBCD	Abceyuio	10	-1
+strlwr	ABC	abc
+strlwr	abc	abc
+strlwr	A	a
+strlwr	a	a
+strlwr	aBcBdGH	abcbdgh
+strlwr	aaaBh	aaabh	
+strupr	abc	ABC
+strupr	a	A
+strupr	A	A
+strupr	abCdFT	ABCDFT
+strupr	AbF	ABF
+strrev	def	fed
+strrev	a	a
+strrev	ab	ba
+strrev	abba	abba	 	 
+strdup	efg	efg
+strdup	a	a
+strdup	abcdfgt	abcdfgt
+strdup	ghj	ghj
+strdup	ABC	ABC
+strdup	AGtYu	AGtYu	
+strndup	adfg	2	ad
+strndup	abdfgt	1	a
+strndup	a	100	a
+strndup	abc	2	ab
+strndup	ABFG	8	ABFG
+strndup	AbC	3	AbC
+index	bcfc	c	cfc
+index	abc	b	bc
+index	abc	a	abc
+index	abca	a	abca
+index	bagaga	g	gaga
+index	abc	 	null
+index	bcda	a	a
+rindex	bcfc	c	c
+rindex	abababa	a	a		
+rindex	abcbd	b	bd
+rindex	abc	 	null
+rindex	abc	a	abc
+rindex	abcab	a	ab
+rindex	abc	d	null
+rindex	abc	1	null
+bcmp	ab	ab	2	0
+bcmp	ab	abc	2	0
+bcmp	aefgtr	abghty	1	0
+bcmp	abcd	bcdf	4	-1
+bcmp	abc	efg	10	-4
+bcmp	efg	abc	100	4
+bcmp	ab	abc	4	-99
+bcmp	abcde	abcd	7	101 
+bcopy	agh	ty	2	ag
+bcopy	fgt	abcd	2	fgcd
+bcopy	ab	abc	1	abc
+bcopy	dbc	ab	1	db
+bcopy	efg	abcd	2	efcd
+bcopy	abc	 	2	ab	
+bcopy	 	abcd	 0	abcd
+bcopy	efghi	abcd	5	efghi
+bcopy	 	a	1	 

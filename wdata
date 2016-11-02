@@ -1,0 +1,140 @@
+wcslen	को अपना होमपेज बनाएँ। 	4
+wcslen	mayank	6
+wcslen	अक्सर आप 	6
+wcslen	a	1
+wcslen	ab	2
+wcslen	abcdefghij	10
+wcslen	 	1
+wcscpy	abc	ab	ab
+wcscpy	आप 	अक्सर	अक्सर
+wcscpy	ab	abc	abc
+wcscpy	abc	ab	ab
+wcscpy	abc	 	 	
+wcscpy	 	abc	abc
+wcscpy	होमपेज	अपना	अपना 
+wcscpy	a	abcdefghijk	abcdefghijk
+wcsncpy	abc	de	2	dec
+wcsncpy	ab	dbc	1	db
+wcsncpy	abcd	efg	2	efcd
+wcsncpy	abcd	efgh	10	efgh
+wcsncpy	 	abc	2	ab	
+wcsncpy	abcd	 	0	abcd
+wcsncpy	bc	  	10	  
+wcsncpy	abc	efghi	5	efghi
+wcscat	ab	cd	abcd
+wcscat	abc	ab	abcab	
+wcscat	a	abcd	aabcd
+wcscat	 	abc	 abc
+wcscat	abc	 	abc 
+wcscat	a	b	ab
+wcsncat	ab	cd	1	abc
+wcsncat	abc	ab	2	abcab
+wcsncat	ab	a	0	ab
+wcsncat	abc	a	5	abca
+wcsncat	ab	 	0	ab
+wcsncat	 	ab	1	 a
+wcsncat	a	abcd	100	aabcd
+wcscmp	ab	ab	0
+wcscmp	abcf	abcd	1
+wcscmp	ab	ac	-1
+wcscmp	abcd	abc	1
+wcscmp	abcde	efgh	-1
+wcscmp	efgh	afgh	1
+wcsncmp	abc	ab	2	0
+wcsncmp	aefgtr	abghty	1	0
+wcsncmp	abcd	bcdf	4	-1
+wcsncmp	abc	efg	10	-1
+wcsncmp	efg	abc	100	1
+wcsncmp	abcde	abcd	7	1
+wcschr	abc	a	abc
+wcschr	abc	b	bc
+wcschr	abca	a	abca
+wcschr	bagaga	g	gaga
+wcschr	abc	 	null
+wcschr	abc	f	null
+wcsrchr	abca	a	a
+wcsrchr	abababa	a	a		
+wcsrchr	abcbd	b	bd
+wcsrchr	abc	 	null
+wcsrchr	abc	a	abc
+wcsrchr	abcab	a	ab
+wcsrchr	abc	d	null
+wcsrchr	abc	1	null
+wcsspn	abc	ab	2
+wcsspn	abcd	efg	0
+wcsspn	abcd	bc	0
+wcsspn	abcd	a	1
+wcsspn	abc	 	0
+wcsspn	efgh	ejfi	2
+wcsspn	efgh	afgdeh	4
+wcscspn	ertab	ab	3
+wcscspn	abcd	cd	2
+wcscspn	abcd	efgh	4
+wcscspn	abcd	 	4
+wcscspn	abcd	tyuiod	3
+wcscspn	abc	dc	2
+wcscspn	abcd	dcba	0
+wcspbrk1	abhi	ib	bhi
+wcspbrk1	abhijit	ijt	ijit
+wcspbrk1	abcd	 	null
+wcspbrk1	abcd	tyuid	d
+wcspbrk1	abcd	dcba	abcd
+wcspbrk1	abcd	i	null
+wcspbrk1	abcd	uidb	bcd
+wcsstr	abcde	bc	bcde
+wcsstr	abcd	bc	bcd
+wcsstr	abcd	bcf	null
+wcsstr	abcab	ab	abcab
+wcsstr	ababab	a	ababab
+wcsstr	ab	abc	null
+wcsstr	afc	ab	null
+wcsstr	abc	 	null
+wcsstr	ab	abc	null
+wmemchr1	abcd	b	4	bcd
+wmemchr1	abc	b	2	bc
+wmemchr1	abc	b	1	null
+wmemchr1	abca	a	5	abca
+wmemchr1	bagaga	g	4	gaga
+wmemchr1	abc	 	3	null
+wmemchr1	abc	z	10	null
+wmemchr1	bcda	a	4	a
+wmemchr1	bababa	a	1	null
+wmemcmp	abc	ab	1	0
+wmemcmp	abc	ab	2	0
+wmemcmp	aefgtr	abghty	1	0
+wmemcmp	abcd	bcdf	4	-1
+wmemcmp	abc	efg	10	-1
+wmemcmp	efg	abc	100	1
+wmemcmp	abcde	abcd	7	1
+wmemcpy	abcd	def	2	decd
+wmemcpy	abc	ab	1	abc
+wmemcpy	ab	dbc	1	db
+wmemcpy	abcd	efg	2	efcd
+wmemcpy	abcd	efgh	10	efgh
+wmemcpy	 	abc	2	ab	
+wmemcpy	abcd	 	0	abcd
+wmemcpy	abc	efghi	5	efghi
+wmemcpy	a	 	1	 
+wmemmove	abcd	ghj	3	ghjd
+wmemmove	abcd	fgt	2	fgcd
+wmemmove	abc	ab	1	abc
+wmemmove	ab	dbc	1	db
+wmemmove	abcd	efg	2	efcd
+wmemmove	abcd	efgh	10	efgh
+wmemmove	 	abc	2	ab	
+wmemmove	abcd	 	0	abcd
+wmemmove	abc	efghi	5	efghi
+wmemmove	a	 	1	 
+wmemset1	abcd	a	3	aaad
+wmemset1	abcd	b	0	abcd
+wmemset1	abcd	a	2	aacd
+wmemset1	 	a	1	a
+wcsdup	abcd	abcd
+wcsdup	आप	आप
+wcsdup	efg	efg
+wcsdup	होमपेज	होमपेज
+wcsdup	a	a
+wcsdup	abcdfgt	abcdfgt
+wcsdup	ghj	ghj
+wcsdup	ABC	ABC
+wcsdup	AGtYu	AGtYu
