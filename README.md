@@ -7,8 +7,8 @@ c:Includes an input file for the user where he can test the functions written an
 d:Includes input file for string.h and wchar.h
 
 How to use:
-For string.h : Use "make" command and ./project data1
-For wchar.h : use "make -f makefile.nix" command and ./project1 wdata
+For string.h : Use "make" command and ./project1 data1
+For wchar.h : use "make" command and ./project2 wdata
   
 Imp points:
 To use NULL pointer in input file use "null".
